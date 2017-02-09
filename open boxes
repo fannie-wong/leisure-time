@@ -6,8 +6,8 @@ follow the regular 100 times, then now how many boxes are opened? which are they
 
 solution1:
 import numpy
-box=numpy.zeros(100)
-for i in range(1,len(box)+1):
+box=numpy.zeros(101)
+for i in range(1,len(box)):
     for j in range(0,len(box),i):
         box[j]=-box[j]+1
 for i in range(len(box)):
