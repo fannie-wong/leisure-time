@@ -5,5 +5,20 @@ Third, change the opening status for the last one of every three boxes.
 follow the regular 100 times, then now how many boxes are opened? which are they?
 
 solution1:
+import numpy
+box=numpy.zeros(100)
+for i in range(1,len(box)+1):
+    for j in range(0,len(box),i):
+        box[j]=-box[j]+1
+for i in range(len(box)):
+    if box[i]:
+        print(i,end=' ')
 
 solution2:
+for i in range(1,101):
+    k=0
+    for j in range(1,i+1):
+        if i%j==0:
+            k+=1
+    if k%2==1:
+        print(i,end=' ')
