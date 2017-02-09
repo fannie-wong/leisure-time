@@ -1,0 +1,9 @@
+There are 100 closed boxes.
+First, open all the boxes.
+Second, every two boxes closes the latter one.
+Third, change the opening status for the last one of every three boxes.
+follow the regular 100 times, then now how many boxes are opened? which are they?
+
+solution1:
+
+solution2:
