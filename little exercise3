@@ -1,0 +1,10 @@
+#输入某年某月某日，判断这一天是这一年的第几天？
+
+year=int(input('year:'))
+month=int(input('month:'))
+day=int(input('day:'))
+days=[31,28,31,30,31,30,31,31,30,31,30,31]
+if year%100==0 and year%400==0 and year%4==0:
+    days[1]+=1
+count=sum(days[0:month-1])+day
+print(count)
